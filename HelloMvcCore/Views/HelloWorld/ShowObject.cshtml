@@ -1,0 +1,13 @@
+﻿@model HelloMvcCore.Models.ClassA
+
+@{
+    ViewData["Title"] = "ShowObject";
+}
+
+<h2>ShowObject</h2>
+
+<p>
+    Typ des Models: @Model.GetType().FullName
+</p>
+Daten von ClassA: StringVal @Model.StringVal IntVal @Model.IntVal
+

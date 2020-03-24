@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewData["Title"] = "Show";
+}
+
+<h2>@ViewBag.Message</h2>
+
+<p>Das ist die Seite HelloWorld.Show</p>
+<p>Der Wert von DummyProperty ist @ViewBag.DummyProperty</p>
+<p>als ViewData: @ViewData["DummyProperty"]</p>
+Liste der Namen:
+<ul>
+    @foreach (var name in ViewBag.Names)
+    {
+        <li>@name</li>
+    }
+</ul>
